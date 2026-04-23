@@ -1,0 +1,679 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kimberly Bajet</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+          * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            list-style: none;
+          }
+
+          body 
+          {
+            background: linear-gradient(to left,  #ffffff, #fffdfd);
+          }
+
+          header 
+          {
+            background: linear-gradient(to right,  #d3d1d1, #ffffff);
+            padding: 20px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 8rem;
+          }
+
+          .logo 
+          {
+            color: #1e1e24;
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+
+          .navmenu {
+            display: flex;
+          }
+
+          .navmenu a 
+          {
+            display: inline-block;
+            margin: 0 1.5rem;
+            color: #1e1e24;
+            font-weight: 500;
+            transition: all 0.6s ease;
+          }
+
+          .navmenu a:hover 
+          {
+            transform: translateY(-5px);
+          }
+
+          .home 
+          {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            padding: 2rem 5rem 0 18rem;
+            gap: 1rem;
+          }
+
+          .home-img img 
+          {
+            border-radius: 30px; /* Make the image square */
+            width: 330px;
+            height: 350px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 0.5px solid #000000; /* Highlight profile image */
+          }
+
+          .home-text h2 
+          {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+          }
+
+          .home-text h3 
+          {
+            position: relative;
+            padding-left: 6rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+          }
+          .home-text h3::before 
+          {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 2px;
+            background-color: #1e1e24;
+            left: 0;
+            top: 1rem;
+          }
+              .home-text p 
+          {
+            margin-bottom: 2rem;  
+          }
+
+          .btn 
+          {
+            display: inline-block;
+            width: fit-content;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            color: #f7f7f2;
+            border: 1px solid #1e1e24;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+            background: #1e1e24;
+            transition: all 0.5s;
+          }
+
+          .btn:hover 
+          {
+            background: #b3b32b;
+            color: #1e1e24;
+            transform: translateY(5px);
+          }
+
+          .socials-icons 
+          {
+            position: absolute;
+            top: 40%;
+            padding: 0 8rem;
+          }
+
+          .socials-icons i 
+          {
+            display: block;
+            margin: 25px 0;
+            color: #1e1e24;
+            font-size: 1.5rem;
+            transition: all 0.6s;
+          }
+
+          .socials-icons i:hover 
+          {
+            transform: rotate3d(0, 0, 1, 90deg);
+          }
+
+          .scroll-btn 
+          {
+            position: absolute;
+            bottom: 7%;
+            left: 9%;
+          }
+          .scroll-btn 
+          {
+            color: #1e1e24;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+          }
+
+          .container
+          {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+          }
+
+          .section
+          {
+            margin-bottom: 50px;
+          }
+
+          .section-title
+          {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #33322a; /* Highlight section titles */
+          }
+
+          .section-name
+          {
+            font-size: 24px;
+            color: #aa9f49;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: underline;
+            text-align: center;
+          }
+
+          .section-content 
+          {
+            font-size: 16px;
+            line-height: 1.6;
+          }
+    </style>
+        <link rel="icon" type="image/x-icon" href="https://i.ibb.co/njtkDr9/New-Project-262-3158-B36.png?fbclid=IwZXh0bgNhZW0CMTAAAR0AzthvIBnItg6z4sbYqPag-eAufACUkVXAxdDobLT7WWJ8_6lh_S2267I_aem_AaPFXlS8mcHbveTYPwvO1fEUmlVX4qsKQohlh1_wQoXAPN0dslSZ5HgLAhnP874Dt4L1bKs6rXvmELtYNwXbQbvt">
+  </head>
+  <body>
+    <header>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="mediaqueries.css" />
+      <link rel="stylesheet" href="script.js"
+      <a href="#" class="logo">Kimberly Bajet</a>
+      <ul class="navmenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <nav id="hamburger-nav">
+        <div class="logo">Kimc</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      <div class="menu-links">
+        <li><a href="#" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+    </header>
+
+    <section class="home">
+      <div class="home-text">
+        <h2>Hello I'm Kim <i class="ph-bold ph-hand-waving"></i></h2>
+        <h3></h3>
+        <p>"Im 1st year  college student based in Caloocan, Philippines. I'm passionate about learning, building my skills, and working hard toward my goals. I’m dedicated, motivated, and always open to new challenges and experiences.".</p>
+        <div class="home-btn">
+          <a href="#" class="btn">Contact Info</a>
+          <a href="https://scontent.fmnl40-1.fna.fbcdn.net/v/t39.30808-6/677116224_2115430972633057_2274092319515029287_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGypwfaoPNRoRBwUSoie4c585wdc1eO_QzznB1zV479DA8w7LVIQQR3HTFVJwC1jr-oaC7XwOWDeCPzyV6z8goc&_nc_ohc=R5qXsiWCVOkQ7kNvwEbRV97&_nc_oc=AdpUxsFPOF4NKVjyZRAGDdUsuLoWSwS6zGZLYHQ4-SZWj0_bZo8G6dmxIGlHZVIf0A0&_nc_zt=23&_nc_ht=scontent.fmnl40-1.fna&_nc_gid=k4hWr1b4xUzXVJrCnpdgsg&oh=00_Af03sckRgwgR1lUXtjNVD0IJfuNgRMYC6JVLXmrgc0lj5w&oe=69EFE016" class="btn">Download CV </a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/679040185_2115399452636209_1520196049255798104_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFXXTxJrwh_aY9HdCo8eNCYDn97W9P0j9oOf3tb0_SP2tBAfOhau43gIX7nQqYuO3RIOcO82GKp36XTaPaFnLxV&_nc_ohc=ZNJT7jCUe4EQ7kNvwGXnTet&_nc_oc=AdqIJ4PPbiGbsSGKgvvI23jlDoOee48rhY9JFzlm1m-P7-68REGs1xmBexoDfNoYHtA&_nc_zt=23&_nc_ht=scontent.fmnl8-2.fna&_nc_gid=UYhMDVuRC8hKGw-BX_y4Ew&oh=00_Af23YgRPfxDaskqC-_CT5oX1ev43YQ92Cgu_jwFrKlrZQw&oe=69EFBB50" />
+      </div>
+    </section>
+
+    <div class="socials-icons">
+      <a href="https://www.facebook.com/hangkyutttko10."><i class="ph-bold ph-facebook-logo"></i></a>
+      <a href="https://github.com/kimbajet028-rgb"><i class="ph-bold ph-github-logo"></i></a>
+    </div>
+    <a href="#" class="scroll-btn">Scroll down
+      <i class="ph-bold ph-arrow-bend-right-down"></i>
+    </a>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/558904802_1954295382079951_4228490633107022164_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeH9-D0zFZQXtW9oBGAUGA-KMn-VKgxnXGQyf5UqDGdcZOD4aSyRkTdHhM7X4_JnbtEJDug-QhYprYMbiq_Dg71_&_nc_ohc=L79JR0OX6j8Q7kNvwHtE5JE&_nc_oc=Adqt9hH66Qqh-U2rx8MwMJiPdpoD_4mhQyDCHLU04Arl9xic45oeJJHw1zoBj5urzsc&_nc_zt=23&_nc_ht=scontent.fmnl3-1.fna&_nc_gid=rtSOjYY9jvDN7PcQH_9sAA&oh=00_Af0MzzDhsjNCJCqwMyTs8BgPfOgTaSVTDdE7sg4PpTtymg&oe=69EFA1F4"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="https://www.tesda.gov.ph/Uploads/Image/Gallery/default.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>grade 12<br />Tesda Css</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/327186508_3309450049270409_2470372800968013759_n.png?_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeHSjUMKKe7KnwifrNT-UWpSwe47jkxXIc3B7juOTFchzQVzCcOMBrxpfLCbiNlFUdgP9Fp1mHXYUk6jsa5V2hAA&_nc_ohc=hmgTCkX2-nIQ7kNvwHXOAdv&_nc_oc=AdrNXpRUoApnWFS2Ob_CQGuc9Qhpspry6F8Z1iB3jbh8NuVrtuCtDXjdOibC0rwspmk&_nc_zt=23&_nc_ht=scontent.fmnl8-4.fna&_nc_gid=fGgMHhNH3TgACJdiDCIipg&oh=00_Af3ppKF9nm0kY4HhrcKK-C15JhmJ9Rbxh14zvfK1NV1xtw&oe=69EFBFA7"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Science in Information Technology<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Good day! My name is Kimberly Bajet, a passionate and dedicatedfull stak developer in Caloocan City. I earned my Bachelor of Science in Information Technology from Global Reciprocal Colleges,am building my skills in creating user-friendly interfaces and understanding server-side technologies. With a strong eagerness to learn and improve, I am continuously exploring new tools and concepts to develop efficient and creative digital solutions. I am motivated to gain experience and take on opportunities that will help me grow as a developer.
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Basta ito</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NONE</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="*"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NONE</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">PATI TO</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sql</h3>
+                  <p>SOON</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>SOON</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>None</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="experience">
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Other Software Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Photoshop</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Canva</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Capcut</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>AlightMotion</h3>
+                    <p>Experienced<p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PowerPoint</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MS Excel</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MS Word</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/025/469/339/non_2x/check-mark-icon-checkmark-icon-approved-symbol-confirmation-sign-design-elements-checklist-positive-thinking-sign-correct-answer-flat-icon-illustration-vector.jpg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                
+      <img
+        src=""
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://scontent.fmnl40-1.fna.fbcdn.net/v/t39.30808-6/678382559_2115414322634722_2904305046950702890_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEunyrYFGR0EUfocxjcMOVoVZhVzj_N05JVmFXOP83Tkm5zBYPFu2_XdwPi06hz3vWWuQhU-pqzTFcwTeoQHW6p&_nc_ohc=2KczDbPrG48Q7kNvwGqNXZk&_nc_oc=AdoDKHojA053FgfMUtTgoDt8zFRxOo-4QYD-F8nraHVNUdjANqrWfxgckltHVljolhk&_nc_zt=23&_nc_ht=scontent.fmnl40-1.fna&_nc_gid=6FJpHJQuptwy_DyEv3OGrA&oh=00_Af37GnFLzFydLOWppUP8kYETPz3q_zhCk-DUd5jMq-bgUg&oe=69EFC390"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bootstrap Icon</h2>
+            <div class="btn-container">The image is a collection of well-known digital brand logos that represent different sectors of modern technology and online services. Each symbol reflects a company that plays a role in shaping today’s interconnected digital economy, especially in areas such as e-commerce, finance, productivity, communication, and travel.
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://kimbajet028-rgb.github.io/bootsrapicon_bajet/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://i.pinimg.com/1200x/f4/63/6c/f4636c91a2c029c7686a8d11fa527b54.jpg'"
+              >
+              Link
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://scontent.fmnl40-1.fna.fbcdn.net/v/t39.30808-6/675060368_2115414545968033_2795231292695235536_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeE1dZ_rMfKtUynRbhY2lbexudxayq2Edga53FrKrYR2BgvVAXRtArfRfvjNyn0Lkz5PTRXiwNNa15iH59Ej5izm&_nc_ohc=kzBsGZwUJAUQ7kNvwGcm9cu&_nc_oc=AdolnaEa_6o5bW_hs_ICLxyQfmPEGMPggQXEpee6XnGzQbFbL9SdwIa_fVfTkFw1Oko&_nc_zt=23&_nc_ht=scontent.fmnl40-1.fna&_nc_gid=-sQefEoiwAVi5ZIQkZIX4Q&oh=00_Af0t02QneaQKbREiJ-i5fCSGywuewtIEq4EULaVM9SAiRQ&oe=69EFC2A5"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Calendar</h2>
+            <div class="btn-container">A colorful 2026 calendar dashboard with a green background, featuring an analog clock on the left and neatly arranged monthly calendars on the right.
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://kimbajet028-rgb.github.io/bajetcalendar/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://i.pinimg.com/736x/78/e3/49/78e34990fdae224049ca7a76e55c1efa.jpg'"
+              >
+                Link
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.pinimg.com/736x/f6/09/7c/f6097cbdd01a201bb66aee6748ceead4.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Soonest</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://i.pinimg.com/1200x/2f/5f/f7/2f5ff7a48dbe2cccdd9a4c95172c2fad.jpg'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYT3exZabjNNYv5MxMC3keJeyNFeXrLpERLQ&s"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Kimbajet028@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgSKcHkTt51M7rXKd1QuAn4ChsoPXU5GGcg&s"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/kim-bajet-085307304/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul class="navmenu">
+          <li><a href= "#" onclick="toggleMenu()">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &#169; 2026 Kimberly Bajet. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
